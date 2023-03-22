@@ -3,6 +3,7 @@ import { Grid } from '@mui/material';
 
 //components
 import Banner from '../banner/Banner';
+import Header from '../header/Header';
 import Categories from './Categories';
 import Posts from './post/Posts';
 
@@ -10,6 +11,7 @@ const Home = () => {
 
     return (
         <>
+            <Header/>
             <Banner />
             <Grid container>
                 <Grid item lg={2} xs={12} sm={2}>

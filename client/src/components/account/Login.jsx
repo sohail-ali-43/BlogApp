@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { API } from '../../service/api';
 import { DataContext } from '../../context/DataProvider';
+import Header from '../header/Header';
 
 const Component = styled(Box)`
     width: 400px;
@@ -131,6 +132,7 @@ const Login = ({ isUserAuthenticated }) => {
     return (
         <Component>
             <Box>
+                <Header/>
                 <Image src={imageURL} alt="blog" />
                 {
                     account === 'login' ?

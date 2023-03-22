@@ -40,6 +40,7 @@ const Heading = styled(Typography)`
     font-weight: 600;
     text-align: center;
     margin: 50px 0 10px 0;
+    border: 1px solid black;
 `;
 
 const Author = styled(Box)(({ theme }) => ({
@@ -49,6 +50,7 @@ const Author = styled(Box)(({ theme }) => ({
     [theme.breakpoints.down('sm')]: {
         display: 'block'
     },
+
 }));
 
 const DetailView = () => {
